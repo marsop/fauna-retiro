@@ -21,15 +21,21 @@ function Index() {
   })
 
   const [justFoundId, setJustFoundId] = React.useState<string | null>(null)
-  const { foundAnimalIds, markAsFound } = useQuestStore()
+  const { foundAnimalIds, markAsFound, animalSequence, initializeSequence } = useQuestStore()
+
+  React.useEffect(() => {
+    if (animals.length > 0) {
+      initializeSequence(animals.map(a => a.id))
+    }
+  }, [animals, initializeSequence])
 
   if (isLoading) {
     return <div className="text-center p-10 font-bold text-muted-foreground animate-pulse">{t('quest.loading')}</div>
   }
 
-  // Find the first animal that hasn't been found yet based on display_order
-  const sortedAnimals = [...animals].sort((a, b) => a.display_order - b.display_order)
-  const currentTarget = sortedAnimals.find(a => !foundAnimalIds.includes(a.id))
+  // Find the first animal that hasn't been found yet based on animalSequence
+  const currentTargetId = animalSequence.find(id => !foundAnimalIds.includes(id))
+  const currentTarget = currentTargetId ? animals.find(a => a.id === currentTargetId) : undefined
 
   const handleFound = (id: string) => {
     setJustFoundId(id)
