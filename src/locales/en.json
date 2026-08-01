@@ -1,0 +1,57 @@
+{
+  "header": {
+    "title": "Fauna Quest",
+    "found": "{{found}} / {{total}} Found"
+  },
+  "nav": {
+    "quest": "Quest",
+    "progress": "Progress"
+  },
+  "card": {
+    "continue": "Continue",
+    "foundIt": "Found It!",
+    "iFoundIt": "I Found It!"
+  },
+  "index": {
+    "loading": "Loading Quest...",
+    "found": "Found!",
+    "questComplete": "Quest Complete!",
+    "amazingJob": "You found all the animals! Amazing job!",
+    "viewProgress": "View Your Progress",
+    "currentTarget": "Current Target"
+  },
+  "progress": {
+    "loading": "Loading Progress...",
+    "checklist": "Your Checklist",
+    "found": "Found!",
+    "hiding": "Still hiding...",
+    "resetQuest": "Reset Quest",
+    "confirmReset": "Are you sure you want to reset all your progress and start over?"
+  },
+  "animals": {
+    "jaguar": {
+      "name": "Jaguar",
+      "description": "The largest cat in the Americas, known for its beautiful spotted coat and powerful bite."
+    },
+    "redSquirrel": {
+      "name": "Red Squirrel",
+      "description": "Look near the trees! It has brown fur and a bushy tail."
+    },
+    "mallardDuck": {
+      "name": "Mallard Duck",
+      "description": "Check near the water! You might hear it quack."
+    },
+    "monarchButterfly": {
+      "name": "Monarch Butterfly",
+      "description": "Look around the flowers. It has orange and black wings!"
+    },
+    "ladybug": {
+      "name": "Ladybug",
+      "description": "Search the leaves. It is small, red, and has black spots."
+    },
+    "greenFrog": {
+      "name": "Green Frog",
+      "description": "Look closely near the pond. It jumps high!"
+    }
+  }
+}

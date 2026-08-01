@@ -1,0 +1,57 @@
+{
+  "header": {
+    "title": "Fauna Quest",
+    "found": "{{found}} / {{total}} gefunden"
+  },
+  "nav": {
+    "quest": "Aufgabe",
+    "progress": "Fortschritt"
+  },
+  "card": {
+    "continue": "Weiter",
+    "foundIt": "Gefunden!",
+    "iFoundIt": "Ich hab's gefunden!"
+  },
+  "index": {
+    "loading": "Lade Aufgabe...",
+    "found": "Gefunden!",
+    "questComplete": "Aufgabe abgeschlossen!",
+    "amazingJob": "Du hast alle Tiere gefunden! Tolle Arbeit!",
+    "viewProgress": "Zeige deinen Fortschritt",
+    "currentTarget": "Aktuelles Ziel"
+  },
+  "progress": {
+    "loading": "Lade Fortschritt...",
+    "checklist": "Deine Checkliste",
+    "found": "Gefunden!",
+    "hiding": "Versteckt sich noch...",
+    "resetQuest": "Aufgabe zurücksetzen",
+    "confirmReset": "Bist du sicher, dass du deinen gesamten Fortschritt zurücksetzen und von vorne beginnen möchtest?"
+  },
+  "animals": {
+    "jaguar": {
+      "name": "Jaguar",
+      "description": "Die größte Raubkatze auf dem amerikanischen Doppelkontinent, bekannt für ihr wunderschönes geflecktes Fell und ihren kräftigen Biss."
+    },
+    "redSquirrel": {
+      "name": "Eichhörnchen",
+      "description": "Schau in der Nähe der Bäume! Es hat braunes Fell und einen buschigen Schwanz."
+    },
+    "mallardDuck": {
+      "name": "Stockente",
+      "description": "Such in der Nähe des Wassers! Vielleicht hörst du sie quaken."
+    },
+    "monarchButterfly": {
+      "name": "Monarchfalter",
+      "description": "Schau bei den Blumen. Er hat orange und schwarze Flügel!"
+    },
+    "ladybug": {
+      "name": "Marienkäfer",
+      "description": "Such auf den Blättern. Er ist klein, rot und hat schwarze Punkte."
+    },
+    "greenFrog": {
+      "name": "Grüner Frosch",
+      "description": "Schau genau am Teich hin. Er springt hoch!"
+    }
+  }
+}
