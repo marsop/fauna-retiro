@@ -30,5 +30,31 @@
     "continue": "Continue",
     "foundItAlready": "Found It!",
     "foundIt": "I Found It!"
+  },
+  "animals": {
+    "jaguar": {
+      "name": "Jaguar",
+      "description": "The largest cat in the Americas, known for its beautiful spotted coat and powerful bite."
+    },
+    "parrot": {
+      "name": "Parrot",
+      "description": "Parrots are incredibly intelligent and some can even mimic human speech, with certain species knowing hundreds of words!"
+    },
+    "crocodile": {
+      "name": "Crocodile",
+      "description": "Crocodiles are large aquatic reptiles that live throughout the tropics. They are powerful predators with incredibly strong jaws."
+    },
+    "heron": {
+      "name": "Heron",
+      "description": "Herons are long-legged, long-necked, freshwater and coastal birds known for their graceful hunting along water edges."
+    },
+    "elephant": {
+      "name": "Elephant",
+      "description": "Elephants are the largest existing land animals, distinguished by their long trunks, tusks, and large ear flaps."
+    },
+    "goose": {
+      "name": "Goose",
+      "description": "Geese are waterfowl known for their distinctive honking sounds and for flying in a V-formation during migration."
+    }
   }
 }

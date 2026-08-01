@@ -32,7 +32,7 @@ export const AnimalCard: React.FC<AnimalCardProps> = ({ animal, onFound, onNext,
         ) : (
           <img
             src={formatAssetUrl(animal.image_url)}
-            alt={animal.name}
+            alt={t(animal.name)}
             className="object-cover w-full h-full"
           />
         )}
@@ -45,9 +45,9 @@ export const AnimalCard: React.FC<AnimalCardProps> = ({ animal, onFound, onNext,
         )}
       </div>
       <CardHeader className="text-center pb-2">
-        <CardTitle className="text-3xl font-bold text-primary">{animal.name}</CardTitle>
+        <CardTitle className="text-3xl font-bold text-primary">{t(animal.name)}</CardTitle>
         <CardDescription className="text-lg font-medium text-muted-foreground mt-2">
-          {animal.description}
+          {t(animal.description)}
         </CardDescription>
       </CardHeader>
       <CardContent>
