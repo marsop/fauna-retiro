@@ -4,6 +4,7 @@ import { Button } from './ui/button'
 import type { Database } from '../types/supabase'
 import { CheckCircle2 } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { formatAssetUrl } from '../lib/utils'
 
 type Animal = Database['public']['Tables']['animals']['Row']
 
@@ -21,7 +22,7 @@ export const AnimalCard: React.FC<AnimalCardProps> = ({ animal, onFound, onNext,
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
         {isFound && animal.video_url ? (
           <video
-            src={animal.video_url}
+            src={formatAssetUrl(animal.video_url)}
             autoPlay
             loop
             muted
@@ -30,7 +31,7 @@ export const AnimalCard: React.FC<AnimalCardProps> = ({ animal, onFound, onNext,
           />
         ) : (
           <img
-            src={animal.image_url}
+            src={formatAssetUrl(animal.image_url)}
             alt={animal.name}
             className="object-cover w-full h-full"
           />

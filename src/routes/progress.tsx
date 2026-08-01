@@ -17,6 +17,7 @@ import {
   AlertDialogTrigger,
 } from '../components/ui/alert-dialog'
 import { useTranslation } from 'react-i18next'
+import { formatAssetUrl } from '../lib/utils'
 
 export const Route = createFileRoute('/progress')({
   component: ProgressScreen,
@@ -47,7 +48,7 @@ function ProgressScreen() {
           return (
             <Card key={animal.id} className={`p-3 flex items-center gap-4 transition-all ${isFound ? 'bg-primary/5 border-primary/20' : 'bg-background'}`}>
               <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-muted relative">
-                 <img src={animal.image_url} alt={animal.name} className={`w-full h-full object-cover transition-all ${!isFound ? 'grayscale opacity-40' : ''}`} />
+                 <img src={formatAssetUrl(animal.image_url)} alt={animal.name} className={`w-full h-full object-cover transition-all ${!isFound ? 'grayscale opacity-40' : ''}`} />
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className={`font-bold text-lg truncate ${isFound ? 'text-primary' : 'text-muted-foreground'}`}>{animal.name}</h3>
