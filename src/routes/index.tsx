@@ -7,12 +7,14 @@ import confetti from 'canvas-confetti'
 import { Button } from '../components/ui/button'
 import { Link } from '@tanstack/react-router'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 export const Route = createFileRoute('/')({
   component: Index,
 })
 
 function Index() {
+  const { t } = useTranslation()
   const { data: animals = [], isLoading } = useQuery({
     queryKey: ['animals'],
     queryFn: fetchAnimals
@@ -22,7 +24,7 @@ function Index() {
   const { foundAnimalIds, markAsFound } = useQuestStore()
 
   if (isLoading) {
-    return <div className="text-center p-10 font-bold text-muted-foreground animate-pulse">Loading Quest...</div>
+    return <div className="text-center p-10 font-bold text-muted-foreground animate-pulse">{t('quest.loading')}</div>
   }
 
   // Find the first animal that hasn't been found yet based on display_order
@@ -50,7 +52,7 @@ function Index() {
       return (
         <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
           <div className="mb-6 text-center">
-            <h2 className="text-xl font-bold text-green-600 uppercase tracking-widest text-sm">Found!</h2>
+            <h2 className="text-xl font-bold text-green-600 uppercase tracking-widest text-sm">{t('quest.foundTitle')}</h2>
           </div>
           <AnimalCard
             animal={foundAnimal}
@@ -67,11 +69,11 @@ function Index() {
     return (
       <div className="text-center py-20 px-4 space-y-6 flex flex-col items-center">
         <div className="text-6xl mb-4">🏆</div>
-        <h2 className="text-3xl font-black text-primary">Quest Complete!</h2>
-        <p className="text-lg text-muted-foreground">You found all the animals! Amazing job!</p>
+        <h2 className="text-3xl font-black text-primary">{t('quest.completeTitle')}</h2>
+        <p className="text-lg text-muted-foreground">{t('quest.completeDesc')}</p>
         <Link to="/progress">
           <Button size="lg" className="mt-8 rounded-full font-bold text-lg px-8">
-            View Your Progress
+            {t('quest.viewProgress')}
           </Button>
         </Link>
       </div>
@@ -81,7 +83,7 @@ function Index() {
   return (
     <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
       <div className="mb-6 text-center">
-        <h2 className="text-xl font-bold text-muted-foreground uppercase tracking-widest text-sm">Current Target</h2>
+        <h2 className="text-xl font-bold text-muted-foreground uppercase tracking-widest text-sm">{t('quest.currentTarget')}</h2>
       </div>
       <AnimalCard
         animal={currentTarget}

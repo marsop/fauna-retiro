@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from './ui/button'
 import type { Database } from '../types/supabase'
 import { CheckCircle2 } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 type Animal = Database['public']['Tables']['animals']['Row']
 
@@ -14,6 +15,7 @@ interface AnimalCardProps {
 }
 
 export const AnimalCard: React.FC<AnimalCardProps> = ({ animal, onFound, onNext, isFound = false }) => {
+  const { t } = useTranslation()
   return (
     <Card className="w-full max-w-md mx-auto overflow-hidden shadow-lg border-4 border-transparent hover:border-primary/20 transition-all">
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
@@ -56,7 +58,7 @@ export const AnimalCard: React.FC<AnimalCardProps> = ({ animal, onFound, onNext,
             className="w-full text-xl py-8 rounded-2xl font-bold tracking-wide shadow-md transition-transform active:scale-95 bg-green-600 hover:bg-green-700 text-white"
             onClick={() => onNext(animal.id)}
           >
-            Continue
+            {t('animalCard.continue')}
           </Button>
         ) : (
           <Button
@@ -66,7 +68,7 @@ export const AnimalCard: React.FC<AnimalCardProps> = ({ animal, onFound, onNext,
             disabled={isFound}
             variant={isFound ? "secondary" : "default"}
           >
-            {isFound ? "Found It!" : "I Found It!"}
+            {isFound ? t('animalCard.foundItAlready') : t('animalCard.foundIt')}
           </Button>
         )}
       </CardFooter>

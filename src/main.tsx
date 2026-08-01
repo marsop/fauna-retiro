@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider, createHashHistory } from '@tanstack/react-router'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import './index.css'
+import './i18n'
 import { router } from './router'
 
 const hashHistory = createHashHistory()

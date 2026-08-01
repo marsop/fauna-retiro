@@ -1,0 +1,34 @@
+{
+  "app": {
+    "title": "Fauna Quest"
+  },
+  "nav": {
+    "quest": "Suche",
+    "progress": "Fortschritt"
+  },
+  "quest": {
+    "loading": "Suche wird geladen...",
+    "foundTitle": "Gefunden!",
+    "completeTitle": "Suche abgeschlossen!",
+    "completeDesc": "Du hast alle Tiere gefunden! Tolle Leistung!",
+    "viewProgress": "Fortschritt ansehen",
+    "currentTarget": "Aktuelles Ziel"
+  },
+  "progress": {
+    "loading": "Fortschritt wird geladen...",
+    "checklist": "Deine Checkliste",
+    "found": "Gefunden!",
+    "hiding": "Noch versteckt...",
+    "foundCount": "{{found}} / {{total}} Gefunden",
+    "reset": "Suche neustarten",
+    "resetTitle": "Suche neustarten",
+    "resetDesc": "Bist du sicher, dass du deinen gesamten Fortschritt zurücksetzen und von vorne beginnen möchtest?",
+    "cancel": "Abbrechen",
+    "continue": "Weiter"
+  },
+  "animalCard": {
+    "continue": "Weiter",
+    "foundItAlready": "Gefunden!",
+    "foundIt": "Ich hab's gefunden!"
+  }
+}
