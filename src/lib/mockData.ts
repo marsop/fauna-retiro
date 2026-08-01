@@ -13,11 +13,20 @@ export const mockAnimals: Animal[] = [
     created_at: new Date().toISOString(),
   },
   {
+    id: 'd9f8c7b6-a5e4-3210-fedc-ba0987654321',
+    name: 'Parrot',
+    description: 'Parrots are incredibly intelligent and some can even mimic human speech, with certain species knowing hundreds of words!',
+    image_url: '/images/parrot.jpg',
+    video_url: '/videos/parrot.mp4',
+    display_order: 1,
+    created_at: new Date().toISOString(),
+  },
+  {
     id: 'b3c14c53-b827-4a6c-b3a7-33d3cf6e1544',
     name: 'Red Squirrel',
     description: 'Look near the trees! It has brown fur and a bushy tail.',
     image_url: '/images/red-squirrel.jpg',
-    display_order: 1,
+    display_order: 2,
     created_at: new Date().toISOString(),
   },
   {
@@ -25,7 +34,7 @@ export const mockAnimals: Animal[] = [
     name: 'Mallard Duck',
     description: 'Check near the water! You might hear it quack.',
     image_url: '/images/mallard-duck.jpg',
-    display_order: 2,
+    display_order: 3,
     created_at: new Date().toISOString(),
   },
   {
@@ -33,7 +42,7 @@ export const mockAnimals: Animal[] = [
     name: 'Monarch Butterfly',
     description: 'Look around the flowers. It has orange and black wings!',
     image_url: '/images/monarch-butterfly.jpg',
-    display_order: 3,
+    display_order: 4,
     created_at: new Date().toISOString(),
   },
   {
@@ -41,7 +50,7 @@ export const mockAnimals: Animal[] = [
     name: 'Ladybug',
     description: 'Search the leaves. It is small, red, and has black spots.',
     image_url: '/images/ladybug.jpg',
-    display_order: 4,
+    display_order: 5,
     created_at: new Date().toISOString(),
   },
   {
@@ -49,7 +58,7 @@ export const mockAnimals: Animal[] = [
     name: 'Green Frog',
     description: 'Look closely near the pond. It jumps high!',
     image_url: '/images/green-frog.jpg',
-    display_order: 5,
+    display_order: 6,
     created_at: new Date().toISOString(),
   }
 ]
