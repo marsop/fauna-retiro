@@ -5,12 +5,25 @@ import { useQuestStore } from '../hooks/useQuestStore'
 import { Button } from '../components/ui/button'
 import { Card } from '../components/ui/card'
 import { CheckCircle2, Circle } from 'lucide-react'
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from '../components/ui/alert-dialog'
+import { useTranslation } from 'react-i18next'
 
 export const Route = createFileRoute('/progress')({
   component: ProgressScreen,
 })
 
 function ProgressScreen() {
+  const { t } = useTranslation()
   const { data: animals = [], isLoading } = useQuery({
     queryKey: ['animals'],
     queryFn: fetchAnimals
@@ -19,14 +32,14 @@ function ProgressScreen() {
   const { foundAnimalIds, resetProgress } = useQuestStore()
 
   if (isLoading) {
-    return <div className="text-center p-10 font-bold text-muted-foreground animate-pulse">Loading Progress...</div>
+    return <div className="text-center p-10 font-bold text-muted-foreground animate-pulse">{t('progress.loading')}</div>
   }
 
   const sortedAnimals = [...animals].sort((a, b) => a.display_order - b.display_order)
 
   return (
     <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-300 pb-10">
-      <h2 className="text-2xl font-black text-center text-primary mt-2">Your Checklist</h2>
+      <h2 className="text-2xl font-black text-center text-primary mt-2">{t('progress.checklist')}</h2>
 
       <div className="grid gap-3">
         {sortedAnimals.map((animal) => {
@@ -38,7 +51,7 @@ function ProgressScreen() {
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className={`font-bold text-lg truncate ${isFound ? 'text-primary' : 'text-muted-foreground'}`}>{animal.name}</h3>
-                <p className="text-sm text-muted-foreground truncate">{isFound ? 'Found!' : 'Still hiding...'}</p>
+                <p className="text-sm text-muted-foreground truncate">{isFound ? t('progress.found') : t('progress.hiding')}</p>
               </div>
               <div className="shrink-0 pr-2">
                 {isFound ? (
@@ -53,17 +66,39 @@ function ProgressScreen() {
       </div>
 
       <div className="pt-8 flex justify-center">
-        <Button
-          variant="outline"
-          className="border-red-200 text-red-600 hover:bg-red-50 hover:text-red-700"
-          onClick={() => {
-            if (window.confirm("Are you sure you want to reset all your progress and start over?")) {
-              resetProgress()
+        <AlertDialog>
+          <AlertDialogTrigger
+            render={
+              <Button
+                variant="outline"
+                className="border-red-200 text-red-600 hover:bg-red-50 hover:text-red-700"
+              />
             }
-          }}
-        >
-          Reset Quest
-        </Button>
+          >
+            {t('progress.reset')}
+          </AlertDialogTrigger>
+          <AlertDialogContent>
+            <AlertDialogHeader>
+              <AlertDialogTitle>{t('progress.resetTitle')}</AlertDialogTitle>
+              <AlertDialogDescription>
+                {t('progress.resetDesc')}
+              </AlertDialogDescription>
+            </AlertDialogHeader>
+            <AlertDialogFooter>
+              <AlertDialogCancel
+                render={<Button variant="outline" />}
+              >
+                {t('progress.cancel')}
+              </AlertDialogCancel>
+              <AlertDialogAction
+                render={<Button />}
+                onClick={() => resetProgress()}
+              >
+                {t('progress.continue')}
+              </AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
       </div>
     </div>
   )

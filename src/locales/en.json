@@ -1,0 +1,34 @@
+{
+  "app": {
+    "title": "Fauna Quest"
+  },
+  "nav": {
+    "quest": "Quest",
+    "progress": "Progress"
+  },
+  "quest": {
+    "loading": "Loading Quest...",
+    "foundTitle": "Found!",
+    "completeTitle": "Quest Complete!",
+    "completeDesc": "You found all the animals! Amazing job!",
+    "viewProgress": "View Your Progress",
+    "currentTarget": "Current Target"
+  },
+  "progress": {
+    "loading": "Loading Progress...",
+    "checklist": "Your Checklist",
+    "found": "Found!",
+    "hiding": "Still hiding...",
+    "foundCount": "{{found}} / {{total}} Found",
+    "reset": "Reset Quest",
+    "resetTitle": "Reset Quest",
+    "resetDesc": "Are you sure you want to reset all your progress and start over?",
+    "cancel": "Cancel",
+    "continue": "Continue"
+  },
+  "animalCard": {
+    "continue": "Continue",
+    "foundItAlready": "Found It!",
+    "foundIt": "I Found It!"
+  }
+}
