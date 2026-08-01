@@ -1,0 +1,51 @@
+{
+  "animals": {
+    "redSquirrel": {
+      "name": "Eichhörnchen",
+      "description": "Schau in der Nähe der Bäume! Es hat braunes Fell und einen buschigen Schwanz."
+    },
+    "mallardDuck": {
+      "name": "Stockente",
+      "description": "Schau in der Nähe des Wassers! Vielleicht hörst du sie quaken."
+    },
+    "monarchButterfly": {
+      "name": "Monarchfalter",
+      "description": "Schau dich bei den Blumen um. Er hat orange-schwarze Flügel!"
+    },
+    "ladybug": {
+      "name": "Marienkäfer",
+      "description": "Such auf den Blättern. Er ist klein, rot und hat schwarze Punkte."
+    },
+    "greenFrog": {
+      "name": "Grüner Frosch",
+      "description": "Schau genau am Teich hin. Er springt hoch!"
+    }
+  },
+  "quest": {
+    "loading": "Quest wird geladen...",
+    "completeTitle": "Quest abgeschlossen!",
+    "completeText": "Du hast alle Tiere gefunden! Tolle Leistung!",
+    "viewProgress": "Fortschritt ansehen",
+    "currentTarget": "Aktuelles Ziel"
+  },
+  "progress": {
+    "loading": "Fortschritt wird geladen...",
+    "checklist": "Deine Checkliste",
+    "found": "Gefunden!",
+    "stillHiding": "Versteckt sich noch...",
+    "resetQuest": "Quest zurücksetzen",
+    "resetConfirm": "Bist du sicher, dass du deinen gesamten Fortschritt zurücksetzen und von vorne beginnen möchtest?"
+  },
+  "nav": {
+    "quest": "Quest",
+    "progress": "Fortschritt"
+  },
+  "animalCard": {
+    "foundIt": "Gefunden!",
+    "iFoundIt": "Ich hab's gefunden!"
+  },
+  "header": {
+    "title": "Fauna Quest",
+    "found": "{{found}} / {{total}} Gefunden"
+  }
+}

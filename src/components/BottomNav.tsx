@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link, useRouterState } from '@tanstack/react-router'
 import { Map, Trophy } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 export const BottomNav: React.FC = () => {
+  const { t } = useTranslation()
   const routerState = useRouterState()
   const isProgress = routerState.location.pathname === '/progress'
 
@@ -14,14 +16,14 @@ export const BottomNav: React.FC = () => {
           className={`flex flex-col items-center p-3 rounded-xl transition-colors ${!isProgress ? 'text-primary' : 'text-muted-foreground hover:bg-muted'}`}
         >
           <Map size={28} className={!isProgress ? 'fill-primary/20' : ''} />
-          <span className="text-xs font-bold mt-1">Quest</span>
+          <span className="text-xs font-bold mt-1">{t('nav.quest')}</span>
         </Link>
         <Link
           to="/progress"
           className={`flex flex-col items-center p-3 rounded-xl transition-colors ${isProgress ? 'text-primary' : 'text-muted-foreground hover:bg-muted'}`}
         >
           <Trophy size={28} className={isProgress ? 'fill-primary/20' : ''} />
-          <span className="text-xs font-bold mt-1">Progress</span>
+          <span className="text-xs font-bold mt-1">{t('nav.progress')}</span>
         </Link>
       </div>
     </div>

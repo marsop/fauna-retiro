@@ -4,6 +4,7 @@ import { RouterProvider, createHashHistory } from '@tanstack/react-router'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import './index.css'
 import { router } from './router'
+import './i18n'
 
 const hashHistory = createHashHistory()
 router.update({ history: hashHistory })

@@ -1,0 +1,51 @@
+{
+  "animals": {
+    "redSquirrel": {
+      "name": "Red Squirrel",
+      "description": "Look near the trees! It has brown fur and a bushy tail."
+    },
+    "mallardDuck": {
+      "name": "Mallard Duck",
+      "description": "Check near the water! You might hear it quack."
+    },
+    "monarchButterfly": {
+      "name": "Monarch Butterfly",
+      "description": "Look around the flowers. It has orange and black wings!"
+    },
+    "ladybug": {
+      "name": "Ladybug",
+      "description": "Search the leaves. It is small, red, and has black spots."
+    },
+    "greenFrog": {
+      "name": "Green Frog",
+      "description": "Look closely near the pond. It jumps high!"
+    }
+  },
+  "quest": {
+    "loading": "Loading Quest...",
+    "completeTitle": "Quest Complete!",
+    "completeText": "You found all the animals! Amazing job!",
+    "viewProgress": "View Your Progress",
+    "currentTarget": "Current Target"
+  },
+  "progress": {
+    "loading": "Loading Progress...",
+    "checklist": "Your Checklist",
+    "found": "Found!",
+    "stillHiding": "Still hiding...",
+    "resetQuest": "Reset Quest",
+    "resetConfirm": "Are you sure you want to reset all your progress and start over?"
+  },
+  "nav": {
+    "quest": "Quest",
+    "progress": "Progress"
+  },
+  "animalCard": {
+    "foundIt": "Found It!",
+    "iFoundIt": "I Found It!"
+  },
+  "header": {
+    "title": "Fauna Quest",
+    "found": "{{found}} / {{total}} Found"
+  }
+}
