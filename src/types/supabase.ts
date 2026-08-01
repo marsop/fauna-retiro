@@ -15,6 +15,7 @@ export interface Database {
           name: string
           description: string
           image_url: string
+          video_url?: string
           display_order: number
           created_at?: string
         }
@@ -23,6 +24,7 @@ export interface Database {
           name: string
           description: string
           image_url: string
+          video_url?: string
           display_order: number
           created_at?: string
         }
@@ -31,6 +33,7 @@ export interface Database {
           name?: string
           description?: string
           image_url?: string
+          video_url?: string
           display_order?: number
           created_at?: string
         }

@@ -4,6 +4,15 @@ type Animal = Database['public']['Tables']['animals']['Row']
 
 export const mockAnimals: Animal[] = [
   {
+    id: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890',
+    name: 'Jaguar',
+    description: 'The largest cat in the Americas, known for its beautiful spotted coat and powerful bite.',
+    image_url: '/images/jaguar.png',
+    video_url: '/videos/jaguar.mp4',
+    display_order: 0,
+    created_at: new Date().toISOString(),
+  },
+  {
     id: 'b3c14c53-b827-4a6c-b3a7-33d3cf6e1544',
     name: 'Red Squirrel',
     description: 'Look near the trees! It has brown fur and a bushy tail.',
