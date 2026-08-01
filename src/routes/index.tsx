@@ -6,6 +6,7 @@ import { AnimalCard } from '../components/AnimalCard'
 import confetti from 'canvas-confetti'
 import { Button } from '../components/ui/button'
 import { Link } from '@tanstack/react-router'
+import React from 'react'
 
 export const Route = createFileRoute('/')({
   component: Index,
@@ -17,6 +18,7 @@ function Index() {
     queryFn: fetchAnimals
   })
 
+  const [justFoundId, setJustFoundId] = React.useState<string | null>(null)
   const { foundAnimalIds, markAsFound } = useQuestStore()
 
   if (isLoading) {
@@ -28,13 +30,37 @@ function Index() {
   const currentTarget = sortedAnimals.find(a => !foundAnimalIds.includes(a.id))
 
   const handleFound = (id: string) => {
-    markAsFound(id)
+    setJustFoundId(id)
     confetti({
       particleCount: 150,
       spread: 70,
       origin: { y: 0.6 },
       colors: ['#22c55e', '#3b82f6', '#f59e0b', '#ec4899']
     })
+  }
+
+  const handleNext = (id: string) => {
+    markAsFound(id)
+    setJustFoundId(null)
+  }
+
+  if (justFoundId) {
+    const foundAnimal = animals.find(a => a.id === justFoundId)
+    if (foundAnimal) {
+      return (
+        <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <div className="mb-6 text-center">
+            <h2 className="text-xl font-bold text-green-600 uppercase tracking-widest text-sm">Found!</h2>
+          </div>
+          <AnimalCard
+            animal={foundAnimal}
+            onFound={handleFound}
+            onNext={handleNext}
+            isFound={true}
+          />
+        </div>
+      )
+    }
   }
 
   if (!currentTarget) {
