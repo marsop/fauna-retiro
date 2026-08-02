@@ -12,7 +12,10 @@
     "completeTitle": "¡Misión Completada!",
     "completeDesc": "¡Encontraste todos los animales! ¡Increíble trabajo!",
     "viewProgress": "Ver tu progreso",
-    "currentTarget": "Objetivo Actual"
+    "currentTarget": "Objetivo Actual",
+    "startSearch": "INICIAR BÚSQUEDA",
+    "readyTitle": "¿Listo para encontrar animales?",
+    "namePlaceholder": "Ingresa tu nombre para el Salón de la Fama"
   },
   "progress": {
     "loading": "Cargando Progreso...",

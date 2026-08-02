@@ -5,6 +5,8 @@ interface QuestState {
   foundAnimalIds: string[]
   animalSequence: string[]
   questStarted: boolean
+  userName: string
+  setUserName: (name: string) => void
   markAsFound: (id: string) => void
   resetProgress: () => void
   isFound: (id: string) => boolean
@@ -18,6 +20,8 @@ export const useQuestStore = create<QuestState>()(
       foundAnimalIds: [],
       animalSequence: [],
       questStarted: false,
+      userName: '',
+      setUserName: (name: string) => set({ userName: name }),
       startQuest: () => set({ questStarted: true }),
       markAsFound: (id: string) =>
         set((state) => ({
@@ -25,7 +29,7 @@ export const useQuestStore = create<QuestState>()(
             ? state.foundAnimalIds
             : [...state.foundAnimalIds, id],
         })),
-      resetProgress: () => set({ foundAnimalIds: [], animalSequence: [], questStarted: false }),
+      resetProgress: () => set({ foundAnimalIds: [], animalSequence: [], questStarted: false, userName: '' }),
       isFound: (id: string) => get().foundAnimalIds.includes(id),
       initializeSequence: (availableIds: string[]) =>
         set((state) => {
