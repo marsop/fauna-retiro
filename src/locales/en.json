@@ -12,7 +12,9 @@
     "completeTitle": "Quest Complete!",
     "completeDesc": "You found all the animals! Amazing job!",
     "viewProgress": "View Your Progress",
-    "currentTarget": "Current Target"
+    "currentTarget": "Current Target",
+    "startSearch": "START SEARCH",
+    "readyTitle": "Ready to find animals?"
   },
   "progress": {
     "loading": "Loading Progress...",

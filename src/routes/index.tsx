@@ -21,7 +21,7 @@ function Index() {
   })
 
   const [justFoundId, setJustFoundId] = React.useState<string | null>(null)
-  const { foundAnimalIds, markAsFound, animalSequence, initializeSequence } = useQuestStore()
+  const { foundAnimalIds, markAsFound, animalSequence, initializeSequence, questStarted, startQuest } = useQuestStore()
 
   React.useEffect(() => {
     if (animals.length > 0) {
@@ -31,6 +31,17 @@ function Index() {
 
   if (isLoading) {
     return <div className="text-center p-10 font-bold text-muted-foreground animate-pulse">{t('quest.loading')}</div>
+  }
+
+  if (!questStarted) {
+    return (
+      <div className="text-center py-20 px-4 space-y-6 flex flex-col items-center justify-center min-h-[50vh]">
+        <h2 className="text-3xl font-black text-primary">{t('quest.readyTitle')}</h2>
+        <Button size="lg" className="mt-8 rounded-full font-bold text-lg px-8 py-6 h-auto" onClick={startQuest}>
+          {t('quest.startSearch')}
+        </Button>
+      </div>
+    )
   }
 
   // Find the first animal that hasn't been found yet based on animalSequence

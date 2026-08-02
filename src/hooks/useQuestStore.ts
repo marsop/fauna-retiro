@@ -4,10 +4,12 @@ import { persist } from 'zustand/middleware'
 interface QuestState {
   foundAnimalIds: string[]
   animalSequence: string[]
+  questStarted: boolean
   markAsFound: (id: string) => void
   resetProgress: () => void
   isFound: (id: string) => boolean
   initializeSequence: (availableIds: string[]) => void
+  startQuest: () => void
 }
 
 export const useQuestStore = create<QuestState>()(
@@ -15,13 +17,15 @@ export const useQuestStore = create<QuestState>()(
     (set, get) => ({
       foundAnimalIds: [],
       animalSequence: [],
+      questStarted: false,
+      startQuest: () => set({ questStarted: true }),
       markAsFound: (id: string) =>
         set((state) => ({
           foundAnimalIds: state.foundAnimalIds.includes(id)
             ? state.foundAnimalIds
             : [...state.foundAnimalIds, id],
         })),
-      resetProgress: () => set({ foundAnimalIds: [], animalSequence: [] }),
+      resetProgress: () => set({ foundAnimalIds: [], animalSequence: [], questStarted: false }),
       isFound: (id: string) => get().foundAnimalIds.includes(id),
       initializeSequence: (availableIds: string[]) =>
         set((state) => {
