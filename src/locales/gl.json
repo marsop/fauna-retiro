@@ -1,0 +1,60 @@
+{
+  "app": {
+    "title": "Fauna Quest"
+  },
+  "nav": {
+    "quest": "Misión",
+    "progress": "Progreso"
+  },
+  "quest": {
+    "loading": "Cargando Misión...",
+    "foundTitle": "Atopado!",
+    "completeTitle": "Misión Completada!",
+    "completeDesc": "Atopaches todos os animais! Traballo incrible!",
+    "viewProgress": "Ver o teu progreso",
+    "currentTarget": "Obxectivo Actual"
+  },
+  "progress": {
+    "loading": "Cargando Progreso...",
+    "checklist": "A túa Lista",
+    "found": "Atopado!",
+    "hiding": "Aínda agochado...",
+    "foundCount": "{{found}} / {{total}} Atopados",
+    "reset": "Reiniciar Misión",
+    "resetTitle": "Reiniciar Misión",
+    "resetDesc": "Estás seguro de que queres reiniciar todo o teu progreso e comezar de novo?",
+    "cancel": "Cancelar",
+    "continue": "Continuar"
+  },
+  "animalCard": {
+    "continue": "Continuar",
+    "foundItAlready": "Atopado!",
+    "foundIt": "Atopeino!"
+  },
+  "animals": {
+    "jaguar": {
+      "name": "Xaguar",
+      "description": "O felino máis grande de América, coñecido pola súa fermosa pelaxe manchada e a súa poderosa trabada."
+    },
+    "parrot": {
+      "name": "Loro",
+      "description": "Os loros son incriblemente intelixentes e algúns mesmo poden imitar a fala humana, con certas especies coñecendo centos de palabras!"
+    },
+    "crocodile": {
+      "name": "Crocodilo",
+      "description": "Os crocodilos son grandes réptiles acuáticos que viven nos trópicos. Son poderosos depredadores con mandíbulas incriblemente fortes."
+    },
+    "heron": {
+      "name": "Garza",
+      "description": "As garzas son aves de patas longas, pescozo longo, de auga doce e costeiras, coñecidas pola súa elegante caza nas beiras da auga."
+    },
+    "elephant": {
+      "name": "Elefante",
+      "description": "Os elefantes son os animais terrestres máis grandes que existen, distinguidos polas súas longas trompas, cabeiros e grandes orellas."
+    },
+    "goose": {
+      "name": "Ganso",
+      "description": "Os gansos son aves acuáticas coñecidas polos seus distintivos graznidos e por voar en formación en V durante a migración."
+    }
+  }
+}

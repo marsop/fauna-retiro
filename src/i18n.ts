@@ -4,6 +4,9 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 import en from './locales/en.json';
 import de from './locales/de.json';
+import es from './locales/es.json';
+import gl from './locales/gl.json';
+import vbg from './locales/vbg.json';
 
 i18n
   .use(LanguageDetector)
@@ -15,6 +18,15 @@ i18n
       },
       de: {
         translation: de,
+      },
+      es: {
+        translation: es,
+      },
+      gl: {
+        translation: gl,
+      },
+      vbg: {
+        translation: vbg,
       },
     },
     fallbackLng: 'de',

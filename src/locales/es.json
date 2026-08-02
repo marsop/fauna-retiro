@@ -1,0 +1,60 @@
+{
+  "app": {
+    "title": "Fauna Quest"
+  },
+  "nav": {
+    "quest": "Misión",
+    "progress": "Progreso"
+  },
+  "quest": {
+    "loading": "Cargando Misión...",
+    "foundTitle": "¡Encontrado!",
+    "completeTitle": "¡Misión Completada!",
+    "completeDesc": "¡Encontraste todos los animales! ¡Increíble trabajo!",
+    "viewProgress": "Ver tu progreso",
+    "currentTarget": "Objetivo Actual"
+  },
+  "progress": {
+    "loading": "Cargando Progreso...",
+    "checklist": "Tu Lista",
+    "found": "¡Encontrado!",
+    "hiding": "Aún escondido...",
+    "foundCount": "{{found}} / {{total}} Encontrados",
+    "reset": "Reiniciar Misión",
+    "resetTitle": "Reiniciar Misión",
+    "resetDesc": "¿Estás seguro de que quieres reiniciar todo tu progreso y empezar de nuevo?",
+    "cancel": "Cancelar",
+    "continue": "Continuar"
+  },
+  "animalCard": {
+    "continue": "Continuar",
+    "foundItAlready": "¡Encontrado!",
+    "foundIt": "¡Lo Encontré!"
+  },
+  "animals": {
+    "jaguar": {
+      "name": "Jaguar",
+      "description": "El felino más grande de las Américas, conocido por su hermoso pelaje manchado y poderosa mordida."
+    },
+    "parrot": {
+      "name": "Loro",
+      "description": "Los loros son increíblemente inteligentes y algunos incluso pueden imitar el habla humana, ¡con ciertas especies conociendo cientos de palabras!"
+    },
+    "crocodile": {
+      "name": "Cocodrilo",
+      "description": "Los cocodrilos son grandes reptiles acuáticos que viven en los trópicos. Son poderosos depredadores con mandíbulas increíblemente fuertes."
+    },
+    "heron": {
+      "name": "Garza",
+      "description": "Las garzas son aves de patas largas, cuello largo, de agua dulce y costeras, conocidas por su elegante caza en las orillas del agua."
+    },
+    "elephant": {
+      "name": "Elefante",
+      "description": "Los elefantes son los animales terrestres más grandes que existen, distinguidos por sus largas trompas, colmillos y grandes orejas."
+    },
+    "goose": {
+      "name": "Ganso",
+      "description": "Los gansos son aves acuáticas conocidas por sus distintivos graznidos y por volar en formación en V durante la migración."
+    }
+  }
+}

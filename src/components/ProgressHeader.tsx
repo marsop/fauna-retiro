@@ -13,8 +13,10 @@ export const ProgressHeader: React.FC<ProgressHeaderProps> = ({ total, found }) 
   const percentage = total > 0 ? Math.round((found / total) * 100) : 0
 
   const toggleLanguage = () => {
-    const nextLang = i18n.resolvedLanguage === 'de' ? 'en' : 'de'
-    i18n.changeLanguage(nextLang)
+    const languages = ['de', 'en', 'es', 'gl', 'vbg'];
+    const currentIndex = languages.indexOf(i18n.resolvedLanguage || 'de');
+    const nextIndex = (currentIndex + 1) % languages.length;
+    i18n.changeLanguage(languages[nextIndex]);
   }
 
   return (
