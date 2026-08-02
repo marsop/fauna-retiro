@@ -30,5 +30,31 @@
     "continue": "Weiter",
     "foundItAlready": "Gefunden!",
     "foundIt": "Ich hab's gefunden!"
+  },
+  "animals": {
+    "jaguar": {
+      "name": "Jaguar",
+      "description": "Die größte Katze des amerikanischen Kontinents, bekannt für ihr wunderschönes geflecktes Fell und ihren kräftigen Biss."
+    },
+    "parrot": {
+      "name": "Papagei",
+      "description": "Papageien sind unglaublich intelligent und manche können sogar die menschliche Sprache nachahmen, wobei bestimmte Arten Hunderte von Wörtern kennen!"
+    },
+    "crocodile": {
+      "name": "Krokodil",
+      "description": "Krokodile sind große Wasserreptilien, die in den Tropen leben. Sie sind mächtige Raubtiere mit unglaublich starken Kiefern."
+    },
+    "heron": {
+      "name": "Reiher",
+      "description": "Reiher sind langbeinige, langhalsige Süßwasser- und Küstenvögel, die für ihre anmutige Jagd an den Ufern von Gewässern bekannt sind."
+    },
+    "elephant": {
+      "name": "Elefant",
+      "description": "Elefanten sind die größten noch lebenden Landtiere und zeichnen sich durch ihre langen Rüssel, Stoßzähne und großen Ohren aus."
+    },
+    "goose": {
+      "name": "Gans",
+      "description": "Gänse sind Wasservögel, die für ihre markanten Schnattergeräusche und dafür bekannt sind, dass sie während der Migration in einer V-Formation fliegen."
+    }
   }
 }
