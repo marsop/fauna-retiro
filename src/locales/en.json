@@ -14,7 +14,8 @@
     "viewProgress": "View Your Progress",
     "currentTarget": "Current Target",
     "startSearch": "START SEARCH",
-    "readyTitle": "Ready to find animals?"
+    "readyTitle": "Ready to find animals?",
+    "namePlaceholder": "Enter your name for the Hall of Fame"
   },
   "progress": {
     "loading": "Loading Progress...",

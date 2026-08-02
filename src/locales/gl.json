@@ -12,7 +12,10 @@
     "completeTitle": "Misión Completada!",
     "completeDesc": "Atopaches todos os animais! Traballo incrible!",
     "viewProgress": "Ver o teu progreso",
-    "currentTarget": "Obxectivo Actual"
+    "currentTarget": "Obxectivo Actual",
+    "startSearch": "INICIAR BUSCA",
+    "readyTitle": "Listo para atopar animais?",
+    "namePlaceholder": "Introduce o teu nome para o Salón da Fama"
   },
   "progress": {
     "loading": "Cargando Progreso...",

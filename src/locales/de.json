@@ -14,7 +14,8 @@
     "viewProgress": "Fortschritt ansehen",
     "currentTarget": "Aktuelles Ziel",
     "startSearch": "SUCHE STARTEN",
-    "readyTitle": "Bereit, Tiere zu finden?"
+    "readyTitle": "Bereit, Tiere zu finden?",
+    "namePlaceholder": "Gib deinen Namen für die Ruhmeshalle ein"
   },
   "progress": {
     "loading": "Fortschritt wird geladen...",

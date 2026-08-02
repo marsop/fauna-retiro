@@ -12,7 +12,10 @@
     "completeTitle": "Ufgab Gschafft!",
     "completeDesc": "Du hasch alli Tier gfunda! Super gmacht!",
     "viewProgress": "Din Fortschritt aaluaga",
-    "currentTarget": "Aktuells Ziel"
+    "currentTarget": "Aktuells Ziel",
+    "startSearch": "SUACHI STARTA",
+    "readyTitle": "Parat zum Tiera z'finda?",
+    "namePlaceholder": "Gib din Nama für d'Ruhmeshalla ii"
   },
   "progress": {
     "loading": "Fortschritt wird glada...",

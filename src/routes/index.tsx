@@ -5,6 +5,7 @@ import { useQuestStore } from '../hooks/useQuestStore'
 import { AnimalCard } from '../components/AnimalCard'
 import confetti from 'canvas-confetti'
 import { Button } from '../components/ui/button'
+import { Input } from '../components/ui/input'
 import { Link } from '@tanstack/react-router'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
@@ -21,7 +22,7 @@ function Index() {
   })
 
   const [justFoundId, setJustFoundId] = React.useState<string | null>(null)
-  const { foundAnimalIds, markAsFound, animalSequence, initializeSequence, questStarted, startQuest } = useQuestStore()
+  const { foundAnimalIds, markAsFound, animalSequence, initializeSequence, questStarted, startQuest, userName, setUserName } = useQuestStore()
 
   React.useEffect(() => {
     if (animals.length > 0) {
@@ -37,9 +38,23 @@ function Index() {
     return (
       <div className="text-center py-20 px-4 space-y-6 flex flex-col items-center justify-center min-h-[50vh]">
         <h2 className="text-3xl font-black text-primary">{t('quest.readyTitle')}</h2>
-        <Button size="lg" className="mt-8 rounded-full font-bold text-lg px-8 py-6 h-auto" onClick={startQuest}>
-          {t('quest.startSearch')}
-        </Button>
+
+        <div className="w-full max-w-sm mt-8 space-y-4">
+          <Input
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
+            placeholder={t('quest.namePlaceholder')}
+            className="text-center text-lg h-12"
+          />
+          <Button
+            size="lg"
+            className="w-full rounded-full font-bold text-lg px-8 py-6 h-auto"
+            onClick={startQuest}
+            disabled={!userName.trim()}
+          >
+            {t('quest.startSearch')}
+          </Button>
+        </div>
       </div>
     )
   }
