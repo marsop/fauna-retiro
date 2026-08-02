@@ -47,11 +47,17 @@ function ProgressScreen() {
           const isFound = foundAnimalIds.includes(animal.id)
           return (
             <Card key={animal.id} className={`p-3 flex items-center gap-4 transition-all ${isFound ? 'bg-primary/5 border-primary/20' : 'bg-background'}`}>
-              <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-muted relative">
-                 <img src={formatAssetUrl(animal.image_url)} alt={t(animal.name)} className={`w-full h-full object-cover transition-all ${!isFound ? 'grayscale opacity-40' : ''}`} />
+              <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-muted relative flex items-center justify-center">
+                 {isFound ? (
+                   <img src={formatAssetUrl(animal.image_url)} alt={t(animal.name)} className="w-full h-full object-cover transition-all" />
+                 ) : (
+                   <span className="text-3xl font-bold text-muted-foreground/30">?</span>
+                 )}
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className={`font-bold text-lg truncate ${isFound ? 'text-primary' : 'text-muted-foreground'}`}>{t(animal.name)}</h3>
+                <h3 className={`font-bold text-lg truncate ${isFound ? 'text-primary' : 'text-muted-foreground'}`}>
+                  {isFound ? t(animal.name) : "???"}
+                </h3>
                 <p className="text-sm text-muted-foreground truncate">{isFound ? t('progress.found') : t('progress.hiding')}</p>
               </div>
               <div className="shrink-0 pr-2">
