@@ -1,6 +1,7 @@
 import React from 'react'
 import { Progress } from './ui/progress'
 import { useTranslation } from 'react-i18next'
+import { ModeToggle } from './mode-toggle'
 
 interface ProgressHeaderProps {
   total: number
@@ -24,14 +25,17 @@ export const ProgressHeader: React.FC<ProgressHeaderProps> = ({ total, found }) 
         <div className="flex justify-between items-end">
           <div className="flex items-center gap-3">
             <h1 className="text-2xl font-black tracking-tight">{t('app.title')}</h1>
-            <button
-              onClick={toggleLanguage}
-              className="text-xs font-bold bg-primary-foreground/20 hover:bg-primary-foreground/30 px-2 py-1 rounded-md transition-colors uppercase"
-            >
-              {i18n.resolvedLanguage || 'de'}
-            </button>
+            <div className="flex items-center gap-1">
+              <ModeToggle />
+              <button
+                onClick={toggleLanguage}
+                className="text-xs font-bold bg-primary-foreground/20 hover:bg-primary-foreground/30 px-2 py-1 h-8 rounded-md transition-colors"
+              >
+                {i18n.resolvedLanguage === 'de' ? 'EN' : 'DE'}
+              </button>
+            </div>
           </div>
-          <span className="font-bold text-sm bg-primary-foreground/20 px-2 py-1 rounded-md">
+          <span className="font-bold text-sm bg-primary-foreground/20 px-2 py-1 h-8 flex items-center rounded-md">
             {t('progress.foundCount', { found, total })}
           </span>
         </div>

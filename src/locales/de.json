@@ -12,7 +12,9 @@
     "completeTitle": "Suche abgeschlossen!",
     "completeDesc": "Du hast alle Tiere gefunden! Tolle Leistung!",
     "viewProgress": "Fortschritt ansehen",
-    "currentTarget": "Aktuelles Ziel"
+    "currentTarget": "Aktuelles Ziel",
+    "startSearch": "SUCHE STARTEN",
+    "readyTitle": "Bereit, Tiere zu finden?"
   },
   "progress": {
     "loading": "Fortschritt wird geladen...",
