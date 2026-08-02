@@ -1,0 +1,60 @@
+{
+  "app": {
+    "title": "Fauna Quest"
+  },
+  "nav": {
+    "quest": "Ufgab",
+    "progress": "Fortschritt"
+  },
+  "quest": {
+    "loading": "Ufgab wird glada...",
+    "foundTitle": "Gfunda!",
+    "completeTitle": "Ufgab Gschafft!",
+    "completeDesc": "Du hasch alli Tier gfunda! Super gmacht!",
+    "viewProgress": "Din Fortschritt aaluaga",
+    "currentTarget": "Aktuells Ziel"
+  },
+  "progress": {
+    "loading": "Fortschritt wird glada...",
+    "checklist": "Dine Lishta",
+    "found": "Gfunda!",
+    "hiding": "Versteckt sich no...",
+    "foundCount": "{{found}} / {{total}} Gfunda",
+    "reset": "Ufgab zruggsetza",
+    "resetTitle": "Ufgab zruggsetza",
+    "resetDesc": "Bisch dr sicher, dass da din ganza Fortschritt zruggsetza und vo vorn aafanga witt?",
+    "cancel": "Abbrecha",
+    "continue": "Witer"
+  },
+  "animalCard": {
+    "continue": "Witer",
+    "foundItAlready": "Gfunda!",
+    "foundIt": "I has gfunda!"
+  },
+  "animals": {
+    "jaguar": {
+      "name": "Jaguar",
+      "description": "D'gröschti Katz vo Amerika, bekannt für sis schöna gfleckt Fell und da kräftiga Biss."
+    },
+    "parrot": {
+      "name": "Papagei",
+      "description": "Papageia sind uuuu gschiid und mängi künnand sogar wia Menscha reda, gwüssi Arta kennand hunderte vo Wörter!"
+    },
+    "crocodile": {
+      "name": "Krokodil",
+      "description": "Krokodil sind grossi Wasserreptilia wo ida Tropa leband. Es sind starki Jäger mit uu kräftiga Kiefer."
+    },
+    "heron": {
+      "name": "Reiher",
+      "description": "Reiher sind Vögel mit langa Bai und langa Hälsa. Ma findat sie an Süassgwässer und Küschta, bekannt förs eleganta Jaga am Ufer."
+    },
+    "elephant": {
+      "name": "Elefant",
+      "description": "Elefanta sind di gröschta Landtier wo's git, mer kennt sie an ihram langa Rüssel, da Stosszäh und da grossa Ohra."
+    },
+    "goose": {
+      "name": "Gans",
+      "description": "Gäns sind Wasservögel, bekannt för ihra typischa Gschnatter und das sie bi dr Migration imana V-Format flügend."
+    }
+  }
+}
