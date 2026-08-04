@@ -3,6 +3,7 @@ import { Progress } from './ui/progress'
 import { useTranslation } from 'react-i18next'
 import { ModeToggle } from './mode-toggle'
 import { LanguageSwitcher } from './LanguageSwitcher'
+import { QuestTimer } from './QuestTimer'
 
 interface ProgressHeaderProps {
   total: number
@@ -24,9 +25,12 @@ export const ProgressHeader: React.FC<ProgressHeaderProps> = ({ total, found }) 
               <LanguageSwitcher />
             </div>
           </div>
-          <span className="font-bold text-sm bg-primary-foreground/20 px-2 py-1 h-8 flex items-center rounded-md">
-            {t('progress.foundCount', { found, total })}
-          </span>
+          <div className="flex items-center gap-2">
+            <QuestTimer />
+            <span className="font-bold text-sm bg-primary-foreground/20 px-2 py-1 h-8 flex items-center rounded-md">
+              {t('progress.foundCount', { found, total })}
+            </span>
+          </div>
         </div>
         <Progress value={percentage} className="h-3 bg-primary-foreground/20" />
       </div>
