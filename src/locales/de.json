@@ -4,7 +4,8 @@
   },
   "nav": {
     "quest": "Suche",
-    "progress": "Fortschritt"
+    "progress": "Fortschritt",
+    "about": "Über"
   },
   "quest": {
     "loading": "Suche wird geladen...",
@@ -59,5 +60,11 @@
       "name": "Gans",
       "description": "Gänse sind Wasservögel, die für ihre markanten Schnattergeräusche und dafür bekannt sind, dass sie während der Migration in einer V-Formation fliegen."
     }
+  },
+  "about": {
+    "title": "Über Fauna Quest",
+    "description": "Fauna Quest ist eine interaktive Lern-App, die dir hilft, erstaunliche Tiere zu entdecken und etwas über sie zu lernen.",
+    "authorPrefix": "Erstellt von",
+    "authorName": "Alberto Gregorio"
   }
 }
