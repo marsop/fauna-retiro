@@ -4,7 +4,8 @@
   },
   "nav": {
     "quest": "Quest",
-    "progress": "Progress"
+    "progress": "Progress",
+    "about": "About"
   },
   "quest": {
     "loading": "Loading Quest...",
@@ -59,5 +60,11 @@
       "name": "Goose",
       "description": "Geese are waterfowl known for their distinctive honking sounds and for flying in a V-formation during migration."
     }
+  },
+  "about": {
+    "title": "About Fauna Quest",
+    "description": "Fauna Quest is an interactive educational app designed to help you discover and learn about amazing animals.",
+    "authorPrefix": "Created by",
+    "authorName": "Alberto Gregorio"
   }
 }

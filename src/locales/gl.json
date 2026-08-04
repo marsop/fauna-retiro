@@ -4,7 +4,8 @@
   },
   "nav": {
     "quest": "Misión",
-    "progress": "Progreso"
+    "progress": "Progreso",
+    "about": "Sobre"
   },
   "quest": {
     "loading": "Cargando Misión...",
@@ -59,5 +60,11 @@
       "name": "Ganso",
       "description": "Os gansos son aves acuáticas coñecidas polos seus distintivos graznidos e por voar en formación en V durante a migración."
     }
+  },
+  "about": {
+    "title": "Sobre Fauna Quest",
+    "description": "Fauna Quest é unha aplicación educativa interactiva deseñada para axudarche a descubrir e aprender sobre animais incribles.",
+    "authorPrefix": "Creado por",
+    "authorName": "Alberto Gregorio"
   }
 }

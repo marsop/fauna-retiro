@@ -4,7 +4,8 @@
   },
   "nav": {
     "quest": "Ufgab",
-    "progress": "Fortschritt"
+    "progress": "Fortschritt",
+    "about": "Über"
   },
   "quest": {
     "loading": "Ufgab wird glada...",
@@ -59,5 +60,11 @@
       "name": "Gans",
       "description": "Gäns sind Wasservögel, bekannt för ihra typischa Gschnatter und das sie bi dr Migration imana V-Format flügend."
     }
+  },
+  "about": {
+    "title": "Über Fauna Quest",
+    "description": "Fauna Quest isch a interaktivi Lern-App, wo dr hilft, tolli Tier z'entdecka und öpis über sie z'lerna.",
+    "authorPrefix": "Gmacht vo",
+    "authorName": "Alberto Gregorio"
   }
 }
