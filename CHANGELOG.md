@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0]
+### Added
+- Created `AGENTS.md` containing repository guidelines for automated agents.
+
+## [0.3.0]
+### Changed
+- Incremented version from 0.2.0 (details not previously recorded).
+
 ## [0.2.0]
 ### Changed
 - Hide the names and images of animals that have not yet been found in the "progress" view, replacing them with "???" and a question mark placeholder.
