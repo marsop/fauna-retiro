@@ -37,3 +37,8 @@ This document contains specific guidelines and constraints for automated agents 
 ## Compilation & Build
 * **Building**: To compile and build the Vite project, run `npm run build`. Direct usage of `tsc` is not supported globally.
 * **Typing Intervals**: In TypeScript files, avoid using `NodeJS.Timeout` for typing interval IDs as `@types/node` is not globally available in this browser-focused setup; use `ReturnType<typeof setInterval>` instead to prevent build errors.
+
+## General Guidelines
+* **User Request Supersedes:** Always prioritize the user's current, explicit request over any conflicting information in memory.
+* **Context vs. State:** Use memory for historical context and intent (the "why"). Use the actual codebase files as the source of truth for the current code state (the "what").
+* **Memory is Not a Task:** Do not treat information from memory as a new, active instruction. Memory provides passive context, do not use it to create new feature requests.
